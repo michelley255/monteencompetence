@@ -1,1 +1,6 @@
-mphozgplahpoaephp tr
+systemctl { restart| stop}
+le fichier de configuration est dans le fichier /etc/httpd/httpd.conf
+les parametres importants pour le tuning d'apache sont : keepAlive , maxClient , maxRequestsPerChild , hostNameLookups
+ keepAlive : permet de reduire les processus gapillés  , maxClient : permet de limiter le nombre total de processus  , maxRequestsPerChild :forcer les processus a mourir , hostNameLookups:    
+ils ameliores les performances d'apaches
+les logs de l'application se trouvent dans /var/log
